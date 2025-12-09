@@ -56,6 +56,10 @@ p {
     height:auto;
 }
 
+.button {
+    margin: 15px 0 0 0;
+}
+
 /* mobil */
 
 @media screen and (max-width: 480px) {

@@ -9,7 +9,7 @@ li {
 .image-slider-wrapper {
     position: relative;
     height: 300px;
-    margin: 40px 0;
+    margin: 100px 0 40px 0;
 }
 
 .image-slider-wrapper:before, .image-slider-wrapper:after {
