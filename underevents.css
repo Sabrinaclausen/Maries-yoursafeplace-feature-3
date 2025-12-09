@@ -1,0 +1,84 @@
+h3 {
+    margin: 0;
+}
+
+.event-img-wrapper-1 {
+    width: 90%;
+    height: 400px;
+    overflow: hidden; /* skjuler det, der går ud over boksen */
+}
+
+.event-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%; /* afrunder hjørnerne - følger designmanualen */
+    object-fit: cover; /* sikrer at billedet dækker hele boksen uden at blive forvrænget */
+}
+
+.blue-heart {
+    margin: 0 2% 0 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+.underevents-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.underevents-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+}
+
+.underevents-left div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.underevents-left p {
+    line-height: 2;
+}
+
+.blue-heart {
+    width:10px;
+    height:auto;
+}
+
+/* mobil */
+
+@media screen and (max-width: 480px) {
+    
+
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+/* laptop */
+
+@media screen and (max-width: 1200px) {
+
+    
+}
+
+/* desktop */
+
+@media screen and (min-width: 1200px) {
+    
+}
