@@ -7,74 +7,83 @@
 }
 
 .kontakt-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: #F8F0E2;
-  display: none; /* er som standard gemt */
-  justify-content: center;
-  align-items: center;
-  z-index: 98;
-  opacity: 0;
+    position: fixed;
+    inset: 0;
+    background-color: #F8F0E2;
+    display: none; /* er som standard gemt */
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 98;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .kontakt-overlay.active {
-  display: flex;
-  opacity: 1;
+    display: flex;
+    opacity: 1;
+}
+
+.kontakt-overlay.active .kontakt-container {
+    transform: translateY(0);
 }
 
 .kontakt-container {
-  position: relative;
-  background: #F8F0E2;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 90%;
-  max-height: 90%;
+    position: relative;
+    background: #F8F0E2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
 }
 
 .luk-kontakt-overlay {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  box-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: none;
 }
 
 .buy-button {
-  z-index: 70;
-  transition: opacity 1s ease;
-  cursor: pointer;
+    z-index: 70;
+    transition: opacity 1s ease;
+    cursor: pointer;
 }
 
 .kontakt-formular {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .input-gruppe {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
 
 .input-gruppe label {
-  margin-bottom: 5px;
-  font-family: 'playfair display', serif;
+    margin-bottom: 5px;
+    font-family: 'playfair display', serif;
 }
 
 .input-gruppe input, .input-gruppe textarea {
-  border-radius: 10%;
-  border: 1px #1a1a1a solid;
+    border-radius: 10%;
+    border: 1px #1a1a1a solid;
 }
 
 .input-gruppe textarea {
-  min-height: 150px;
-  resize: vertical;
+    min-height: 150px;
+    resize: vertical;
+    margin: 0, 0, 50px, 0;
 }
 
 .send-button:active {
