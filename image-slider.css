@@ -1,0 +1,65 @@
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.image-slider-wrapper {
+    position: relative;
+    height: 300px;
+    margin: 40px 0;
+}
+
+.image-slider-wrapper:before, .image-slider-wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+}
+
+.image-slider-wrapper:before {
+    left: 0;
+}
+
+.image-slider-wrapper:after {
+    right: 0;
+}
+
+.slider-event-images {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.slider-event-images.active {
+    cursor: grab;
+}
+
+.slider-event-image {
+    display: inline-block;
+    margin-left: 20px;
+    user-select: none;
+    width: auto;
+    height: 300px;
+}
+
+.slider-event-image img {
+    pointer-events: none;
+    user-select: none;
+    border-radius: 5%;
+    width: auto;
+    height: 100%;
+    object-fit: cover; /* sikrer at billedet dækker hele boksen uden at blive forvrænget */
+}
+
+.slider-event-image:last-child {
+    margin-right: 20px;
+}
