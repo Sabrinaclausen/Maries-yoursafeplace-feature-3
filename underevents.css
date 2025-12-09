@@ -56,8 +56,9 @@ p {
     height:auto;
 }
 
-.button {
+.buy-button {
     margin: 15px 0 0 0;
+    padding: 10px 30px;
 }
 
 /* mobil */

@@ -32,11 +32,18 @@ li {
 
 .slider-event-images {
     position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* skjuler scrollbar i Firefox */
     width: 100%;
-    overflow: hidden;
     white-space: nowrap;
     font-size: 0;
     cursor: pointer;
+}
+
+.slider-event-images::-webkit-scrollbar {
+    display: none; /* skjuler scrollbar i Chrome, Safari og Opera */
 }
 
 .slider-event-images.active {
