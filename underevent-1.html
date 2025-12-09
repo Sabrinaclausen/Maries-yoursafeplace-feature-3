@@ -79,6 +79,31 @@
 
             <h3>Pris: 95,- </h3>
             <button class="buy-button">KØB BILLET</button>
+
+            <div class="kontakt-overlay">
+                <div class="kontakt-container">
+                    <button class="luk-kontakt-overlay"><img src="images/close-overlay.svg" alt=""></button>
+
+                    <div class="kontakt-formular">
+                        <h2>Kontaktformular</h2>
+                        <form action="#">
+                            <label for="name">Navn:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="tickets">Antal billetter:</label>
+                            <input type="number" id="tickets" name="tickets" min="1" required>
+
+                            <label for="message">Besked (valgfri):</label>
+                            <textarea id="message" name="message"></textarea>
+
+                            <button type="submit" class="submit-button">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="image-slider-wrapper">

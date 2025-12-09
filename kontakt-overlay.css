@@ -1,47 +1,47 @@
 /* Popup styling */
 
 /* Background overlay */
-#popup-overlay {
+.kontakt-overlay {
   position: fixed;
-  inset: 0; /* top:0; left:0; right:0; bottom:0; */
-  background-color: #363636;
+  inset: 0;
+  background-color: #F8F0E2;
   display: none; /* er som standard gemt */
   justify-content: center;
   align-items: center;
   z-index: 98;
-
   opacity: 0;
-  transition: opacity 1s ease;
 }
 
-#popup-overlay.active {
+.kontakt-overlay.active {
   display: flex;
   opacity: 1;
 }
 
-#popup-container {
+.kontakt-container {
   position: relative;
+  background: #F8F0E2;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
-#close-overlay {
+.luk-kontakt-overlay {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
-  cursor: pointer; /* Unødvendigt i løsningen, men hjælper os under programmering */
+  cursor: pointer;
   z-index: 10;
 }
 
 .buy-button {
-  z-index: 99;
+  z-index: 70;
   transition: opacity 1s ease;
-  cursor: pointer; /* Unødvendigt i løsningen */
+  cursor: pointer;
 }
 
 .fade-out {

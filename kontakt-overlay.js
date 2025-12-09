@@ -1,68 +1,26 @@
-// Popup
+// -- Kontakt-overlay JavaScript --
 
-// Popup-elementer
-const popupOverlay = document.getElementById('kontakt-overlay');
-const backBtn = document.getElementById('buy-button');
-
-function fadeSwapButton(newSrc) {
-  // Fade out
-  backBtn.style.opacity = 0;
-
-  setTimeout(() => {
-    backBtn.src = newSrc;
-    backBtn.style.opacity = 1;
-  }, 800); // Hvor lang tid vores transition skal være
-}
+// Overlay-elementer
+const kontaktOverlay = document.querySelector('.kontakt-overlay');
+const closeOverlayButton = document.querySelector('.luk-kontakt-overlay');
+const buyButton = document.querySelector('.buy-button');
 
 // Funktioner til åbning og lukning af popup
-function openPopup() {
-  popupOverlay.style.display = 'flex';
-  setTimeout(() => popupOverlay.classList.add('active'), 10); // Til CSS transition
-
-  popupVideo.currentTime = 0;
-  popupVideo.play();
-
-  console.log('Popup opened!'); // Debugging log
-
-  // Skifter luk-knap til tilbage-knap
-  fadeSwapButton('images/tilbage-knap.svg');
-  backBtn.onclick = closePopup;
+function openOverlay () {
+  kontaktOverlay.style.display = 'flex';
+  setTimeout(() => kontaktOverlay.classList.add('active'), 10);
 }
 
-function closePopup() {
-  popupOverlay.classList.remove('active');
-  setTimeout(() => popupOverlay.style.display = 'none', 500); // Venter på CSS transition
-  
-  popupVideo.pause();
-  popupVideo.currentTime = 0; // Nulstiller video til starten
-
-  console.log('Popup closed!'); // Debugging log
-
-  // Skifter tilbage-knap til luk-knap
-  fadeSwapButton('images/luk-knap.svg');
+function closeOverlay() {
+  kontaktOverlay.classList.remove('active');
+  setTimeout(() => kontaktOverlay.style.display = 'none', 300);
 }
 
-backBtn.addEventListener('click', () => {
-  // Hvis popup er aktiv, lukkes den
-  if (popupOverlay.classList.contains('active')) {
-    closePopup();
-  } 
-  // Hvis popup ikke er aktiv, gå tilbage til startskærmen
-  else {
-    // Fade skærm ind
-    document.body.style.transition = "opacity 0.8s ease";
-    document.body.style.opacity = "0";
-    setTimeout(() => {
-      window.location.href = "index.html"; // går tilbage til startskærmen
-    }, 800);
-  }
-});
+buyButton.addEventListener('click', openOverlay);
+  closeOverlay.addEventListener('click', closeOverlay);
 
-// --- Event listeners ---
-wangVideo.addEventListener('click', openPopup);
-popupOverlay.addEventListener('click', (e) => {
-  if (e.target === popupOverlay) closePopup();
+kontaktOverlay.addEventListener('click', (e) => {
+    if (e.target === kontaktOverlay) {
+      closeOverlay();
+    }
 });
-
-// Debugging log - kunne ikke finde ud af hvilket element der var i vejen for popup-knappen
-document.addEventListener('click', e => console.log('Clicked:', e.target));
