@@ -85,21 +85,32 @@
                     <button class="luk-kontakt-overlay"><img src="images/close-overlay.svg" alt=""></button>
 
                     <div class="kontakt-formular">
-                        <h2>Kontaktformular</h2>
+                        <h2>Kontakt</h2>
+
+                        <p class="kontaktinfo">
+                            Book din billet til vores næste event her. 
+                            Skriv antal og hvilket event du ønsker billetter til. 
+                            Vi bestræber os på at besvare din henvendelse indenfor 24 timer.
+                        </p>
+
                         <form action="#">
-                            <label for="name">Navn:</label>
-                            <input type="text" id="name" name="name" required>
 
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <div class="input-gruppe">
+                                <label for="navn">Navn:</label>
+                                <input type="text" id="navn" name="navn" required>
+                            </div>
 
-                            <label for="tickets">Antal billetter:</label>
-                            <input type="number" id="tickets" name="tickets" min="1" required>
+                            <div class="input-gruppe">
+                                <label for="e-mail">E-mail:</label>
+                                <input type="e-mail" id="e-mail" name="e-mail" required>
+                            </div>
 
-                            <label for="message">Besked (valgfri):</label>
-                            <textarea id="message" name="message"></textarea>
+                            <div class="input-gruppe">
+                                <label for="besked">Besked:</label>
+                                <textarea id="besked" name="besked"></textarea required>
+                            </div>
 
-                            <button type="submit" class="submit-button">Send</button>
+                            <button type="submit" class="send-button">SEND BESKED</button>
                         </form>
                     </div>
                 </div>

@@ -1,6 +1,11 @@
 /* Popup styling */
 
 /* Background overlay */
+
+.kontaktinfo {
+    width: 80%;
+}
+
 .kontakt-overlay {
   position: fixed;
   inset: 0;
@@ -36,6 +41,7 @@
   border: none;
   cursor: pointer;
   z-index: 10;
+  box-shadow: none;
 }
 
 .buy-button {
@@ -44,12 +50,33 @@
   cursor: pointer;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 1s ease;
+.kontakt-formular {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.fade-in {
-  opacity: 1;
-  transition: opacity 1s ease;
+.input-gruppe {
+  margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-gruppe label {
+  margin-bottom: 5px;
+  font-family: 'playfair display', serif;
+}
+
+.input-gruppe input, .input-gruppe textarea {
+  border-radius: 10%;
+  border: 1px #1a1a1a solid;
+}
+
+.input-gruppe textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.send-button:active {
+    transform: scale(0.98);
 }

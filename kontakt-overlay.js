@@ -17,7 +17,7 @@ function closeOverlay() {
 }
 
 buyButton.addEventListener('click', openOverlay);
-  closeOverlay.addEventListener('click', closeOverlay);
+  closeOverlayButton.addEventListener('click', closeOverlay);
 
 kontaktOverlay.addEventListener('click', (e) => {
     if (e.target === kontaktOverlay) {
