@@ -89,3 +89,27 @@
 .send-button:active {
     transform: scale(0.98);
 }
+
+/* lille mobil */
+
+@media screen and (min-width: 320px) {
+    
+}
+
+
+@media screen and (min-width: 480px) {
+    
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* laptop */
+
+@media screen and (min-width: 1200px) {
+
+    
+}

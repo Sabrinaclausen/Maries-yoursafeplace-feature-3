@@ -33,6 +33,11 @@ p {
     width: 100%;
 }
 
+.underevents-container p {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
 .underevents-left {
     text-align: left;
     display: flex;
@@ -49,6 +54,7 @@ p {
 
 .underevents-left p {
     line-height: 2;
+    margin: 0;
 }
 
 .blue-heart {
@@ -62,29 +68,26 @@ p {
     z-index: 10;
 }
 
-/* mobil */
+/* lille mobil */
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
     
+}
 
+
+@media screen and (min-width: 480px) {
+    
 }
 
 /* tablet */
 
-@media screen and (max-width: 768px) {
-
+@media screen and (min-width: 768px) {
 
 }
 
 /* laptop */
 
-@media screen and (max-width: 1200px) {
-
-    
-}
-
-/* desktop */
-
 @media screen and (min-width: 1200px) {
+
     
 }
