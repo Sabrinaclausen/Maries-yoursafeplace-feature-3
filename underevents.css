@@ -33,7 +33,9 @@ h2 {
     width: 80%;
 }
 
-.underevents-left, .underevents-left-2 {
+.underevents-left, 
+.underevents-left-2,
+.underevents-left-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,18 +48,21 @@ h2 {
     width: 60%;
 }
 
-.underevents-left div {
+.underevents-left div, 
+.underevents-left-3 div {
     display: flex;
     align-items: left;
     flex-direction: row;
+    margin: 5px 0 5px 10px;
 }
 
-.underevents-left p {
-    line-height: 2;
+.underevents-left p, 
+.underevents-left-3 p {
     margin: 0;
+    text-align: left;
 }
 
-.julebingo-text {
+.event-liste {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -65,7 +70,7 @@ h2 {
     white-space: nowrap;
 }
 
-.julebingo-text div {
+.event-liste div {
     display: flex;
     align-items: left;
     flex-direction: row;
@@ -106,8 +111,15 @@ h2 {
         width: 60%;
     }
 
-    .underevents-left, .underevents-left-2 {
+    .underevents-left, 
+    .underevents-left-2 {
         width: 45%;
+    }
+
+    .underevents-left-3 {
+        margin: 0 auto;
+        width: fit-content;
+        white-space: nowrap;
     }
 }
 
@@ -122,7 +134,10 @@ h2 {
         width: 54%;
     }
 
-    .underevents-left, .underevents-left-2 {
-        width: 37%;
+    .underevents-left, 
+    .underevents-left-2{
+        width: 40%;
     }
+
+
 }
