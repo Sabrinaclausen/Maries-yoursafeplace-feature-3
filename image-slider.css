@@ -34,11 +34,9 @@ li {
     position: relative;
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-behavior: smooth;
     scrollbar-width: none; /* skjuler scrollbar i Firefox */
     width: 100%;
-    white-space: nowrap;
-    font-size: 0;
+    display: flex;
     cursor: pointer;
 }
 
@@ -51,8 +49,8 @@ li {
 }
 
 .slider-event-image {
-    display: inline-block;
-    margin-left: 20px;
+    flex: 0 0 auto;
+    margin: 0 10px;
     user-select: none;
     width: auto;
     height: 300px;
