@@ -63,16 +63,26 @@ h2 {
 }
 
 .event-liste {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: fit-content;
     white-space: nowrap;
+    margin: 0 auto;
 }
 
-.event-liste div {
+.event-liste-2  {
+    white-space: wrap;
+    margin: 0 10%;
+}
+
+.event-liste,
+.event-liste-2  {
     display: flex;
-    align-items: left;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.event-liste div, 
+.event-liste-2 div {
+    display: flex;
+    text-align: left;
     flex-direction: row;
     margin: 5px 0;
 }
