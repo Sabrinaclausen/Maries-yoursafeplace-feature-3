@@ -111,6 +111,10 @@
     .kontaktinfo {
         width: 70%;
     }
+    
+    .kontakt-formular {
+        width: 80%;
+    }
 }
 
 /* laptop */
@@ -118,5 +122,9 @@
 @media screen and (min-width: 1200px) {
     .kontaktinfo {
         width: 50%;
+    }
+
+    .kontakt-formular {
+        width: 70%;
     }
 }
