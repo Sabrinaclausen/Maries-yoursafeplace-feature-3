@@ -11,7 +11,7 @@ h2 {
 .event-img {
     width: 100%;
     height: 100%;
-    border-radius: 5%; /* afrunder hjørnerne - følger designmanualen */
+    border-radius: 20px; /* afrunder hjørnerne - følger designmanualen */
     object-fit: cover; /* sikrer at billedet dækker hele boksen uden at blive forvrænget */
 }
 
@@ -46,7 +46,7 @@ h2 {
 
 .underevents-left div {
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: row;
 }
 
@@ -55,12 +55,15 @@ h2 {
     margin: 0;
 }
 
-#julebingo-text {
+.julebingo-text {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+    white-space: nowrap;
 }
 
-#julebingo-text div {
+.julebingo-text div {
     display: flex;
     align-items: left;
     flex-direction: row;
