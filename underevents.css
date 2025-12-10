@@ -37,11 +37,13 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
+
 }
 
 .underevents-left {
     text-align: left;
+    margin: 0 20%;
+    width: 60%;
 }
 
 .underevents-left div {
@@ -72,7 +74,7 @@ h2 {
 
 .blue-heart {
     width: 10px;
-    height:auto;
+    height: auto;
 }
 
 .book-button {
@@ -117,10 +119,10 @@ h2 {
     }
 
     .underevents-container-text {
-        width: 57%;
+        width: 54%;
     }
 
     .underevents-left, .underevents-left-2 {
-        width: 35%;
+        width: 37%;
     }
 }
