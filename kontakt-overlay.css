@@ -55,6 +55,10 @@
     width: 100%;
 }
 
+.kontakt-formular h2 {
+    margin: 0;
+}
+
 .kontaktinfo {
     width: 80%;
     text-align: center;

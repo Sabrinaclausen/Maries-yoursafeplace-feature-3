@@ -3,7 +3,7 @@
 // Overlay-elementer
 const kontaktOverlay = document.querySelector('.kontakt-overlay');
 const closeOverlayButton = document.querySelector('.luk-kontakt-overlay');
-const buyButton = document.querySelector('.buy-button');
+const bookButton = document.querySelector('.book-button');
 
 // Funktioner til åbning og lukning af popup
 function openOverlay () {
@@ -16,7 +16,7 @@ function closeOverlay() {
   setTimeout(() => kontaktOverlay.style.display = 'none', 300);
 }
 
-buyButton.addEventListener('click', openOverlay);
+bookButton.addEventListener('click', openOverlay);
   closeOverlayButton.addEventListener('click', closeOverlay);
 
 kontaktOverlay.addEventListener('click', (e) => {
