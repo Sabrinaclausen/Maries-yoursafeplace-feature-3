@@ -33,12 +33,15 @@ h2 {
     width: 80%;
 }
 
-.underevents-left {
-    text-align: left;
+.underevents-left, .underevents-left-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 65%;
+}
+
+.underevents-left {
+    text-align: left;
 }
 
 .underevents-left div {
@@ -50,6 +53,18 @@ h2 {
 .underevents-left p {
     line-height: 2;
     margin: 0;
+}
+
+#julebingo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#julebingo-text div {
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    margin: 5px 0;
 }
 
 .blue-heart {
@@ -86,7 +101,7 @@ h2 {
         width: 60%;
     }
 
-    .underevents-left {
+    .underevents-left, .underevents-left-2 {
         width: 45%;
     }
 }
@@ -102,7 +117,7 @@ h2 {
         width: 57%;
     }
 
-    .underevents-left {
-        width: 42%;
+    .underevents-left, .underevents-left-2 {
+        width: 35%;
     }
 }

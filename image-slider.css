@@ -85,12 +85,16 @@ li {
 /* tablet */
 
 @media screen and (min-width: 768px) {
-
+    .slider-event-image {
+        height: 400px;
+    }
 }
 
 /* laptop */
 
 @media screen and (min-width: 1200px) {
-
+    .slider-event-image {
+        height: 450px;
+    }
     
 }
