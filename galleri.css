@@ -37,6 +37,68 @@
     transform: scale(1.05); /* zoom-effekt ved hover */
 }
 
+/* Overlays til åbnet billede */
+
+.galleri-overlay {
+    position: fixed;
+    inset: 0;
+    padding: 20px;
+    background-color: #1a1a1a50; /* semi-transparent mørk baggrund */
+    backdrop-filter: blur(5px); /* slører baggrunden */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.galleri-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.galleri-overlay-backdrop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FAFAF8;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.galleri-overlay img {
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.galleri-overlay-close-button {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.galleri-overlay-close-button img {
+    width: 50px;
+    height: auto;
+}
+.galleri-overlay-img-caption {
+    font-family: 'playfair display', serif;
+    text-align: center;
+    width: 80%;
+   margin-bottom: 10px;
+}
+
 /* lille mobil */
 
 @media screen and (max-width: 320px) {
