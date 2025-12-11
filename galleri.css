@@ -83,8 +83,8 @@
 
 .galleri-overlay-close-button {
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 30px;
+    right: 25px;
     cursor: pointer;
     z-index: 1000;
 }
