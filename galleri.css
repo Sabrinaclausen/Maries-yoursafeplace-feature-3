@@ -1,8 +1,10 @@
+/* Galleri-siden */
+
 .galleri-velkomst {
     text-align: center; /* centrerer teksten */
     width: 70%;
     margin: 0 auto; /* centrerer teksten */
-    padding: 30px;
+    padding: 100px 30px 30px 30px;
 }
 
 .galleri-velkomst h2 {
@@ -59,21 +61,20 @@
 }
 
 .galleri-overlay-backdrop {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     background-color: #FAFAF8;
     padding: 10px;
     border-radius: 15px;
-    width: fit-content;
-    height: fit-content;
-    box-sizing: border-box;
+    width: auto;
+    max-width: 85vw;
+    max-height: 85vh;
     gap: 10px;
 }
 
 .galleri-overlay img {
+    position: relative;
     max-width: 80vw;
     max-height: 80vh;
     border-radius: 10px;
@@ -92,10 +93,17 @@
     width: 50px;
     height: auto;
 }
+
 .galleri-overlay-img-caption {
     font-family: 'playfair display', serif;
-    width: 80%;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+    padding: 0 0 10px 0;
+    min-width: 0;
+    max-width: 80vw; /* sørger for, at tekst scalerer med billede og backdrop */
+    height: auto;
 }
 
 /* lille mobil */
@@ -120,6 +128,34 @@
     .galleri-img-wrapper {
         aspect-ratio: 4 / 5;
     }
+
+    .galleri-overlay-backdrop {
+        max-width: 60vw;
+        max-height: 75vh;
+    }
+
+    .galleri-overlay img {
+        max-width: 50vw;
+        max-height: 60vh;
+    }
+
+    .galleri-overlay-img-caption {
+        max-width: 40vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .galleri-overlay-img-caption {
+        max-width: 35vw;
+    }
+
+    .galleri-overlay-backdrop {
+        max-height: 90vh;
+    }
+
+    .galleri-overlay img {
+        max-height: 75vh;
+    }
 }
 
 /* laptop */
@@ -133,10 +169,38 @@
         grid-template-columns: repeat(4, 1fr);
         padding: 0 70px;
     }
+
+    .galleri-overlay-backdrop {
+        max-width: 50vw;
+        max-height: 80vh;
+    }
+
+    .galleri-overlay img {
+        max-width: 45vw;
+        max-height: 65vh;
+    }
+
+    .galleri-overlay-img-caption {
+        max-width: 33vw;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .galleri-velkomst {
         width: 35%;
+    }
+
+    .galleri-overlay-backdrop {
+        max-width: 45vw;
+        max-height: 80vh;
+    }
+
+    .galleri-overlay img {
+        max-width: 35vw;
+        max-height: 65vh;
+    }
+
+    .galleri-overlay-img-caption {
+        max-width: 28vw;
     }
 }
