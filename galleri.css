@@ -20,7 +20,7 @@
 
 .galleri-img-wrapper {
     width: 100%;
-    aspect-ratio: 3 /4; /* bevarer billedets proportioner */
+    aspect-ratio: 3 / 4; /* bevarer billedets proportioner */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -30,6 +30,11 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease; /* tilføjet transition for glidende effekt */
+}
+
+.galleri-img-wrapper img:hover {
+    transform: scale(1.05); /* zoom-effekt ved hover */
 }
 
 /* lille mobil */
@@ -45,10 +50,14 @@
         width: 50%;
         padding: 30px 0 30px 0;
     }
+
+    .galleri-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 50px;
+    }
     
     .galleri-img-wrapper {
-        width: 220px;
-        height: 270px;
+        aspect-ratio: 4 / 5;
     }
 }
 
@@ -57,11 +66,6 @@
 @media screen and (min-width: 1200px) {
     .galleri-velkomst {
         width: 40%;
-    }
-    
-    .galleri-img-wrapper {
-        width: 250px;
-        height: 300px;
     }
 
     .galleri-container {
@@ -72,10 +76,5 @@
 @media screen and (min-width: 1400px) {
     .galleri-velkomst {
         width: 35%;
-    }
-    
-    .galleri-img-wrapper {
-        width: 300px;
-        height: 350px;
     }
 }
