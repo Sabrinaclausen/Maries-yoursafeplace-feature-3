@@ -87,6 +87,10 @@
     right: 25px;
     cursor: pointer;
     z-index: 1000;
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
 }
 
 .galleri-overlay-close-button img {
@@ -156,6 +160,12 @@
     .galleri-overlay img {
         max-height: 75vh;
     }
+
+    .galleri-overlay-close-button img {
+        width: 70px;
+        height: auto;
+    }
+
 }
 
 /* laptop */
