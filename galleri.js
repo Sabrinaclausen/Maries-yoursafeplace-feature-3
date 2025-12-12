@@ -1,4 +1,4 @@
-// Vælg overlay-elementet, billedet i overlay, biled-caption og lukkeknap
+// Vælg overlay-elementet, billedet i overlay, billed-caption og lukkeknap
 const galleriOverlay = document.querySelector('.galleri-overlay');
 const galleriOverlayImg = document.querySelector('.galleri-overlay-img');
 const galleriOverlayCaption = document.querySelector('.galleri-overlay-img-caption');
@@ -18,6 +18,8 @@ galleriImages.forEach((img) => {
 
         // Vis overlayet, da det som standard er skjult
         galleriOverlay.style.display = 'flex';
+
+        // 10ms timer til visning
         setTimeout(() => galleriOverlay.classList.add('active'), 10);
     });
 });

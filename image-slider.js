@@ -66,7 +66,7 @@ const momentumScroll = () => {
   momentumFrame = requestAnimationFrame(momentumScroll); // Fortsæt animationen
 }
 
-// Forhindre klik-events under træk/drag
+// Til at forhindre klik-events under træk/drag
 slider.addEventListener('click', (e) => {
   if (isDragging) {
     e.preventDefault();

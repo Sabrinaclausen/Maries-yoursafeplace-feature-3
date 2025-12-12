@@ -17,12 +17,12 @@
     justify-content: center;
     gap: 20px;
     margin: 0 auto;
-    padding: 0 30px; /* sørger for at billederne ikke rører skærmkanten - specielt i responsiv */
+    padding: 0 30px; 
 }
 
 .galleri-img-wrapper {
     width: 100%;
-    aspect-ratio: 3 / 4; /* bevarer billedets proportioner */
+    aspect-ratio: 3 / 4; 
     overflow: hidden;
     border-radius: 10px;
 }
@@ -45,8 +45,8 @@
     position: fixed;
     inset: 0;
     padding: 20px;
-    background-color: #1a1a1a50; /* semi-transparent mørk baggrund */
-    backdrop-filter: blur(5px); /* slører baggrunden */
+    background-color: #1a1a1a50;
+    backdrop-filter: blur(5px); 
     display: none;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@
     text-align: center;
     padding: 0 0 10px 0;
     min-width: 0;
-    max-width: 80vw; /* sørger for, at tekst scalerer med billede og backdrop */
+    max-width: 80vw; 
     height: auto;
 }
 

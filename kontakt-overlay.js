@@ -4,12 +4,11 @@
 
 // Hele overlay-baggrunden
 const kontaktOverlay = document.querySelector('.kontakt-overlay');
-
 // Luk-knappen i overlay
 const closeOverlayButton = document.querySelector('.luk-kontakt-overlay');
-
 // Knappen til at åbne overlay
 const bookButton = document.querySelector('.book-button');
+
 
 // Til åbning af overlay
 function openOverlay () {
